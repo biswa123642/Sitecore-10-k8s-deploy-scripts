@@ -13,16 +13,10 @@
 
 ***Please CD into the directory that contains the  k8s-sitecore-xm1 folder and execute the script from there***
 Be patient, some steps can take a little time to complete.
-
-Prerequisites:
-
 Some Helm/Nginx Errors are expected, these are safe to ignore
 
-Install Azure CLI
-Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; rm .\AzureCLI.msi
-
-Install powershell 7
-msiexec.exe /package PowerShell-7.1.0-win-x64.msi /quiet ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 ENABLE_PSREMOTING=1 REGISTER_MANIFEST=1
+Prerequisites:
+Please see the Readme
 
 #>
 
