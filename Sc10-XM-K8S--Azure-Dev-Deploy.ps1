@@ -152,7 +152,7 @@ Write-Host "--- Complete: Deploy External Resources ---" -ForegroundColor Green
 Write-Host "--- Initialize SQl and SOLR ---" -ForegroundColor Yellow
 kubectl apply -f ./k8s-sitecore-xm1/init/
 kubectl wait --for=condition=Complete job.batch/solr-init --timeout=600s
-kubectl wait --for=condition=Complete job.batch/mssql-init --timeout=600s
+kubectl wait --for=condition=Complete job.batch/mssql-init --timeout=600s
 Write-Host "--- Complete: Initialize SQl and SOLR ---" -ForegroundColor Green
 
 Write-Host "--- Deploy Sitecore ---" -ForegroundColor Yellow
