@@ -1,4 +1,4 @@
-# Colin Coopers "All in one" script for deploying non-production Sitecore 10 "XM" into AKS
+# The Sitecore Swiss Army Knife "All in one" script for deploying non-production Sitecore 10 "XM" into AKS
 
 ## Installing prerequisite software
 
