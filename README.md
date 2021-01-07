@@ -20,8 +20,6 @@ This all in one script will install [Kubernetes](https://kubernetes.io) version 
 az account list-locations -o table
 
 # get  Azure locations
-az aks get-versions -l east-us-2 -o table 
-
 az aks get-versions -l east-us-2 -o table
 KubernetesVersion    Upgrades
 -------------------  -------------------------
