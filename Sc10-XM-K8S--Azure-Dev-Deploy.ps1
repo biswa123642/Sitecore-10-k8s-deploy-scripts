@@ -29,7 +29,7 @@ $ResourceGroup = 'SC10K8Dev1' # the resource group for Azure Kubernetes
 $AcrName = 'SC10K8Dev1'
 $SkuAcr = 'Standard'  #the Sku Type of the Azure Container Registry
 $AKSname = 'SC10K8DevAKS1' #the name of your Azure Kubernetes cluster
-$aksVersion = "1.18.10" #$(az aks get-versions -l $Region --query 'orchestrators[-1].orchestratorVersion' -o tsv)
+$aksVersion = "1.19.6" #$(az aks get-versions -l $Region --query 'orchestrators[-1].orchestratorVersion' -o tsv)
 $AzureWindowsUser = 'azureuser'
 $AzureWindowsPassword="Password!12345" #change this to something secure
 $namespace = "sitecore"
@@ -49,7 +49,6 @@ Write-Host "--- Complete: ACR ---" -ForegroundColor Green
 # Setup CLI & Parameters for AKS creation
 Write-Host "--- Setting up CLI & Params ---" -ForegroundColor yellow
 
-$aksVersion = "1.18.8" #$(az aks get-versions -l $Region --query 'orchestrators[-1].orchestratorVersion' -o tsv)
 Write-Host "--- Complete: CLI & Params Configured ---" -ForegroundColor Green
 
 # create AKS instance
